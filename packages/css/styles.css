@@ -926,6 +926,18 @@ img {
   padding: 0.25rem 0.5rem 0.5rem 0;
 }
 
+.butt{
+  right: 1rem;
+  bottom: -20%;
+  background-color: var(--first-color);
+  opacity: 0.8;
+  padding: 0 0.3rem;
+  border-radius: 0.4rem;
+  height: 65px;
+  width: 200px;
+  border: none;;
+}
+
 /*==================== FOOTER ====================*/
 .footer {
   padding-top: 2rem;

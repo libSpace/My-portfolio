@@ -13,6 +13,9 @@
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="./packages/css/styles.css">
 
+        <!--==================== CSS for button ====================-->
+        <link rel="stylesheet" href="/packages/css/button.css">
+
         <title>Malik</title>
     </head>
     <body>
@@ -830,31 +833,32 @@
                 <form action="" class="contact__form grid">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
+                            <label for="name" class="contact__label">Name</label>
+                            <input type="text" class="contact__input" id="name" name="name">
                         </div>
 
                         <div class="contact__content">
-                            <label for="" class="contact__label">E-mail</label>
-                            <input type="email" class="contact__input">
+                            <label for="email" class="contact__label">E-mail</label>
+                            <input type="email" class="contact__input" id="email" name="email">
                         </div>
                     </div>
 
                     <div class="contact__content">
-                        <label for="" class="contact__label">Subject</label>
-                        <input type="text" class="contact__input">
+                        <label for="Subject" class="contact__label">Subject</label>
+                        <input type="text" class="contact__input" id="subject" name="subject">
                     </div>
 
                     <div class="contact__content">
-                        <label for="" class="contact__label">Description</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        <label for="textarea" class="contact__label">Description</label>
+                        <textarea name="" id="" cols="0" rows="7" class="contact__input" id="textarea" name="textarea"></textarea>
                     </div>
 
-                    <div id="forNow">
-                        <a href="#forNow" class="button button--flex">
+                    <div id="">
+                        <!-- <a href="/" onclick="malik()" class="button button--flex">
                             Send message
                             <i class="uil uil-message button__icon"></i>
-                        </a>
+                        </a> -->
+                        <button class="butt">Send now</button>
                     </div>
                 </form>
             </div>
