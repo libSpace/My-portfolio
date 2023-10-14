@@ -212,3 +212,23 @@ themeButton.addEventListener("click", () => {
 });
 
 //Validation and form data
+function val(){
+  // variables
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const subject = document.getElementById("subject").value;
+  const feed = document.getElementById("textarea").value;
+
+    //conditions for validation
+    if(name === " " || email ===" " || subject  === " " || subject ===" " || feed === " "){
+      alert("Enter all details");
+      return false;
+    }else if(typeof name === 'number'){
+      alert("Name can't be anumber");
+      return false;
+    }else{
+      alert("Succsess");
+      return true
+    }
+
+}
