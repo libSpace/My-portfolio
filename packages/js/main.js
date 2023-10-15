@@ -222,13 +222,12 @@ function val(){
     //conditions for validation
     if(name === " " || email ===" " || subject  === " " || subject ===" " || feed === " "){
       alert("Enter all details");
-      return false;
     }else if(typeof name === 'number'){
-      alert("Name can't be anumber");
-      return false;
+      alert("Name can't be a number");
+      // return false;
     }else{
       alert("Succsess");
-      return true
+      return true;
     }
 
 }
