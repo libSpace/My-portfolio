@@ -1,0 +1,16 @@
+#myForm form{
+    align-items: center;
+    text-align: center;
+}
+#myForm form input,textarea{
+    border-radius: 5px;
+    width: 250px;
+    border: none;
+    margin: 2px;
+}
+#myForm form input{
+    height: 35px;
+}
+#myForm form input textarea button{
+    width: 250px;
+}
