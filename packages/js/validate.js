@@ -14,13 +14,11 @@ function validate(){
    if(name == ""|| email == "" || subject == "" || feed ==""){
       alert("The form is not fully filled!");
       return false;
-   }else if(typeof name !== 'string' && !/^[A-Za-z]+$/.test(name)){
-      
    }
    else if(!validateEmail(email)){
       alert("Check your email")
    }else{
-      alert("nice");
+      alert("Success");
       return true;
    }
 }
