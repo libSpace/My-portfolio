@@ -871,17 +871,18 @@
                     <h1 class="footer__title">Malik M</h1>
                     <span class="footer__subtitle">Software Developer</span>
                 </div>
-                <div class="myF">
+                <div id="myForm">
                     <form action="">
                         <label for="name">Name</label>
-                        <input type="text" id="name"> <br>
+                        <input type="text" id="name" > <br>
                         <label for="email">Email</label>
                         <input type="email" id="email"> <br>
                         <label for="subject">Subject</label>
                         <input type="text" id="subject"> <br>
                         <label for="feed">Feedback</label>
                         <textarea name="feed" id="feed" cols="30" rows="10"></textarea>
-                        <button onclick="validate()">Click</button>
+                        <br>
+                        <a href="#myForm"><button onclick="return validate()">Click</button></a>
                     </form>
                 </div>
                 <div class="footer__socials">
@@ -904,12 +905,13 @@
     <a href="#" class="scrollup" id="scroll-up">
         <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
-    
+    <!-- ================= VALIDATION JS ================= -->
+    <script src="/packages/js/validate.js"></script>
 
     <!--==================== SWIPER JS ====================-->
     <script src="./packages/js/swiper-bundle.min.js"></script>
 
-    <!--==================== MAIN JS ====================-->
+    <!--==================== MAIN JS ======================-->
     <script src="./packages/js/main.js"></script>
 </body>
 
