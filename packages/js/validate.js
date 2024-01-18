@@ -2,7 +2,7 @@
 function validate() {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
-    const subject = document.getElementById("subject").value;
+    const phone = document.getElementById("phone").value;
     const feed = document.getElementById("feed").value;
 
     function validateEmail(email) {
@@ -11,7 +11,7 @@ function validate() {
         return pattern.test(email);
     }
 
-    if (name === "" || email === "" || subject === "" || feed === "") {
+    if (name === "" || email === "" || phone === "" || feed === "") {
         alert("The form is not fully filled!");
         return false;
     } else if (!validateEmail(email)) {
@@ -22,4 +22,22 @@ function validate() {
         return true;
     }
 }
+const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
 
