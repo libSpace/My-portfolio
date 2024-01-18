@@ -977,7 +977,15 @@
                 <span class="circle one"></span>
                 <span class="circle two"></span>
       
-                <form action="index.html" autocomplete="off">
+
+                <div id="modal" class="modal">
+                    <span onclick="closeModal()" style="cursor: pointer; float: right;">&times;</span>
+                    <p id="modalMessage"></p>
+                  </div>
+                  
+                  <div id="overlay" class="overlay"></div>
+
+                <form action="index.html" autocomplete="off" name="contactForm" onsubmit="return validate()">
                   <h3 class="title">Contact us</h3>
                   <div class="input-container">
                     <input type="text" name="name" class="input" />
@@ -999,7 +1007,8 @@
                     <label for="">Message</label>
                     <span>Message</span>
                   </div>
-                  <input type="submit" value="Send" class="btn" />
+                  <button class="btn">Send</button>
+                  
                 </form>
               </div>
             </div>
