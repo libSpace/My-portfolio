@@ -926,93 +926,95 @@
             <p class="footer__copy">&#169; Malope. All rights reserved.</p>
         </div> -->
 
-        <div class="container">
-            <!-- <span class="big-circle"></span> -->
-            <img src="img/shape.png" class="square" alt="" />
-            <div class="form">
-              <div class="contact-info">
-                <h3 class="title">Let's get in touch</h3>
-                <p class="text">
-                    Let's connect and explore the 
-                    possibilities together—reach out to 
-                    me on my portfolio for a collaborative 
-                    journey into innovation and creativity.
-                </p>
-      
-                <div class="info">
-                  <div class="information">
-                    <img src="packages/images/location.png" class="icon" alt="" />
-                    <p>94 Strubens Rd Observatory, <br>Cape Town, 7925 </p>
-                  </div>
-                  <div class="information">
-                    <img src="packages/images/email.png" class="icon" alt="" />
-                    <p>malikmphomalope@gmail.com</p>
-                  </div>
-                  <div class="information">
-                    <img src="packages/images/phone.png" class="icon" alt="" />
-                    <p>0791937168</p>
-                  </div>
+        
+            <div class="container">
+                <!-- <span class="big-circle"></span> -->
+                <img src="img/shape.png" class="square" alt="" />
+                <div class="form">
+                <div class="contact-info">
+                    <h3 class="title">Let's get in touch</h3>
+                    <p class="text">
+                        Let's connect and explore the 
+                        possibilities together—reach out to 
+                        me on my portfolio for a collaborative 
+                        journey into innovation and creativity.
+                    </p>
+        
+                    <div class="info">
+                    <div class="information">
+                        <img src="packages/images/location.png" class="icon" alt="" />
+                        <p>94 Strubens Rd Observatory, <br>Cape Town, 7925 </p>
+                    </div>
+                    <div class="information">
+                        <img src="packages/images/email.png" class="icon" alt="" />
+                        <p>malikmphomalope@gmail.com</p>
+                    </div>
+                    <div class="information">
+                        <img src="packages/images/phone.png" class="icon" alt="" />
+                        <p>0791937168</p>
+                    </div>
+                    </div>
+        
+                    <div class="social-media">
+                    <p>Connect with me :</p>
+                    <div class="social-icons">
+                        <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    </div>
                 </div>
-      
-                <div class="social-media">
-                  <p>Connect with me :</p>
-                  <div class="social-icons">
-                    <a href="#">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                  </div>
+        
+                <div class="contact-form">
+                    <span class="circle one"></span>
+                    <span class="circle two"></span>
+        
+
+                    <div id="modal" class="modal">
+                        <span onclick="closeModal()" style="cursor: pointer; float: right;">&times;</span>
+                        <p id="modalMessage"></p>
+                    </div>
+                    
+                    <div id="overlay" class="overlay"></div>
+
+                    <form action="index.html" autocomplete="off" name="contactForm" onsubmit="return validate()">
+                    <h3 class="title">Contact us</h3>
+                    <div class="input-container">
+                        <input type="text" name="name" class="input" />
+                        <label for="">Username</label>
+                        <span>Username</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" class="input" />
+                        <label for="">Email</label>
+                        <span>Email</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" name="phone" id="phone" class="input" />
+                        <label for="">Phone</label>
+                        <span>Phone</span>
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea name="message" class="input"></textarea>
+                        <label for="">Message</label>
+                        <span>Message</span>
+                    </div>
+                    <button class="btn">Send</button>
+                    
+                    </form>
                 </div>
-              </div>
-      
-              <div class="contact-form">
-                <span class="circle one"></span>
-                <span class="circle two"></span>
-      
-
-                <div id="modal" class="modal">
-                    <span onclick="closeModal()" style="cursor: pointer; float: right;">&times;</span>
-                    <p id="modalMessage"></p>
-                  </div>
-                  
-                  <div id="overlay" class="overlay"></div>
-
-                <form action="index.html" autocomplete="off" name="contactForm" onsubmit="return validate()">
-                  <h3 class="title">Contact us</h3>
-                  <div class="input-container">
-                    <input type="text" name="name" class="input" />
-                    <label for="">Username</label>
-                    <span>Username</span>
-                  </div>
-                  <div class="input-container">
-                    <input type="email" name="email" class="input" />
-                    <label for="">Email</label>
-                    <span>Email</span>
-                  </div>
-                  <div class="input-container">
-                    <input type="tel" name="phone" id="phone" class="input" />
-                    <label for="">Phone</label>
-                    <span>Phone</span>
-                  </div>
-                  <div class="input-container textarea">
-                    <textarea name="message" class="input"></textarea>
-                    <label for="">Message</label>
-                    <span>Message</span>
-                  </div>
-                  <button class="btn">Send</button>
-                  
-                </form>
-              </div>
+                </div>
             </div>
-          </div>
+        
 
     </footer>
 
